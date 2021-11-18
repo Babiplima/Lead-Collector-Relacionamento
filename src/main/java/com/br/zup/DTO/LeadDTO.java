@@ -1,13 +1,26 @@
 package com.br.zup.DTO;
 
+import org.hibernate.validator.constraints.br.CPF;
+
+import javax.validation.Valid;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import java.util.List;
 
 public class LeadDTO {
 
+    @Email
+    @NotNull
     private String email;
+    @NotBlank
     private String nome;
+    @CPF
+    @NotNull
     private String cpf;
+    @NotBlank
     private String telefone;
+    @Valid
     private List<ProdutoDTO> produtos;
 
     public LeadDTO() {
