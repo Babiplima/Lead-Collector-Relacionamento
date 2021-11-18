@@ -15,7 +15,7 @@ public class Lead {
     @Column(unique = true)
     private String cpf;
     private String telefone;
-    @OneToMany(cascade = CascadeType.ALL)
+    @ManyToMany(cascade = CascadeType.PERSIST)
     private List<ProdutoDTO> produtos;
 
     public Lead() {
