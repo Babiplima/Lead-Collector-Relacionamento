@@ -1,5 +1,7 @@
 package com.br.zup.DTO;
 
+import com.br.zup.Produto.ProdutoDTO;
+
 import java.util.List;
 
 public class LeadDetailsDTO {

@@ -1,5 +1,6 @@
 package com.br.zup.DTO;
 
+import com.br.zup.Produto.ProdutoDTO;
 import org.hibernate.validator.constraints.br.CPF;
 
 import javax.validation.Valid;

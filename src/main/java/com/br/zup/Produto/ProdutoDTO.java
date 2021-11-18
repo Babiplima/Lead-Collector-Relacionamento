@@ -1,4 +1,4 @@
-package com.br.zup.DTO;
+package com.br.zup.Produto;
 
 public class ProdutoDTO {
 
