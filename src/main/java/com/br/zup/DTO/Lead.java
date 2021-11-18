@@ -1,13 +1,18 @@
 package com.br.zup.DTO;
 
+import javax.persistence.*;
 import java.util.List;
 
+@Entity
+@Table(name = "lead")
 public class Lead {
-
+    @Id
     private String email;
     private String nome;
+    @Column(unique = true)
     private String cpf;
     private String telefone;
+    @OneToMany(cascade = CascadeType.ALL)
     private List<ProdutoDTO> produtos;
 
     public Lead() {
