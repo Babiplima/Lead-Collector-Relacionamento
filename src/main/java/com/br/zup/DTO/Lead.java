@@ -9,6 +9,7 @@ import java.util.List;
 @Table(name = "lead")
 public class Lead {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String email;
     private String nome;
     @Column(unique = true)
