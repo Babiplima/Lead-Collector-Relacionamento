@@ -2,6 +2,7 @@ package com.br.zup.Produto;
 
 public class ProdutoDTO {
 
+    private Integer id;
     private String nomeProduto;
     private double valor;
 
@@ -27,5 +28,13 @@ public class ProdutoDTO {
 
     public void setValor(double valor) {
         this.valor = valor;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 }
